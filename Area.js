@@ -10,7 +10,7 @@ btnElement.addEventListener("click", () => {
   const base = parseFloat(baseElement.value);
   const height = parseFloat(heightElement.value);
 
-  if (base && height) {
+  if (base && height && (base > 0) & (height > 0)) {
     const area = (1 / 2) * (base * height);
     showOutput(`Area of the triangle is ${area}`);
   } else {

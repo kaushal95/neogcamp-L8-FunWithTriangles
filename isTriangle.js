@@ -14,7 +14,7 @@ btnElement.addEventListener("click", () => {
   const angle2 = Number(inputElements[1].value);
   const angle3 = Number(inputElements[2].value);
   hideOutput();
-  if (angle1 && angle2 && angle3) {
+  if (angle1 && angle2 && angle3 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
     isTriangle(angle1, angle2, angle3)
       ? showOutput(`Its a Triangle 🔺✅`)
       : showOutput(`It's not a Triangle ❌`);

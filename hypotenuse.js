@@ -7,7 +7,7 @@ btnElement.addEventListener("click", () => {
   const side1 = parseFloat(inputElements[0].value);
   const side2 = parseFloat(inputElements[1].value);
 
-  if (side1 && side2) {
+  if (side1 && side2 && side1 > 0 && side2 > 0) {
     const hypo = Math.sqrt(side1 ** 2 + side2 ** 2);
     showOutput(`Hypotenuse is ${hypo.toFixed(2)}`);
   } else {

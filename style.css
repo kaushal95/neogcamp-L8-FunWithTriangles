@@ -67,12 +67,20 @@ input {
     justify-content: center;
     align-items: center;
 }
+/* button */
 .btn{
     background-color: transparent;
     border: 2px solid var(--primary-clr);
     color: white;
     border-radius: 0.3rem;
     padding: 0.3rem;
+}
+
+.btn:hover {
+    background-color: var(--primary-clr);
+    color: black;
+    border-color: white;
+    transform: scale(1.2);
 }
 .active {
     color: black;
@@ -108,6 +116,7 @@ input {
 .quiz-btn{
     display: block;
     margin: 1rem auto;
+
 }
 .output{
     margin-top: 1.5rem;
@@ -118,6 +127,61 @@ input {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+
+
+/* footer */
+.footer,.quiz-footer{
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--primary-clr);
+    color: black;
+    width: 100vw;
+    text-align: center;
+    /* color: black; */
+    padding: 1rem;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+footer .quiz-footer {
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--primary-clr);
+    color: black;
+    width: 100vw;
+    text-align: center;
+}
+footer .link-list {
+    text-align: center;
+    margin: 1rem 0;
+    list-style-type: none;
+    margin: 1rem auto;
+}
+
+footer .link-list li {
+    display: inline;
+    padding: 1rem;
+}
+
+footer .footer-text {
+    /* font-weight: bold; */
+    font-size: large;
+}
+
+footer li a i {
+    color: black;
+    font-size: 1.3rem;
+}
+
+footer li a i:hover {
+    transform: scale(1.5);
+}
+
 @media screen and (min-width:760px) {
     .quiz-container{
         padding: 1rem;
