@@ -2,6 +2,9 @@
     --primary-clr:cornflowerblue;
 
 }
+html{
+    height: 100%;
+}
 html *{
     margin: 0;
     padding: 0;
@@ -11,6 +14,9 @@ html *{
 body{
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 nav{
     display: flex;
@@ -122,6 +128,7 @@ input {
     margin-top: 1.5rem;
     font-size: large;
     text-decoration: 2px underline var(--primary-clr);
+    margin-bottom: 1.5rem;
 }
 .quiz-output{
     text-align: center;
@@ -138,14 +145,10 @@ input {
     color: black;
     width: 100vw;
     text-align: center;
-    /* color: black; */
     padding: 1rem;
 }
 .footer {
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%);
+    margin-top: auto;
 
 }
 footer .quiz-footer {
@@ -169,7 +172,7 @@ footer .link-list li {
 }
 
 footer .footer-text {
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: large;
 }
 
